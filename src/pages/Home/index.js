@@ -1,7 +1,8 @@
 import './style.css'
-import { FiMenu, FiSearch, FiBell, FiVideo, FiGrid, FiMic, FiUser } from 'react-icons/fi'
+import { FiMenu, FiSearch, FiBell, FiVideo, FiGrid, FiMic, FiUser, FiHome, FiRadio, FiYoutube, FiBook } from 'react-icons/fi'
 
-export default () => {
+
+function Home() {
     return (
         <div className="wrapper">
             <div className="header" >
@@ -27,13 +28,44 @@ export default () => {
             </div>
 
             <div className="content" >
-                {/* <div className="sidebar"> */}
-                    {/* a */}
-                {/* </div> */}
+                <div className="sidebar">
+                    <div className="item" >
+                        <FiHome size={22} style={{color: '#fff'}} />
+                        <p>Home</p>
+                    </div>
+                    <div className="item" >
+                        <FiRadio size={22} style={{color: '#fff'}} />
+                        <p>Trending</p>
+                    </div>
+                    <div className="item" >
+                        <FiYoutube size={22} style={{color: '#fff'}} />
+                        <p>Subscriptions</p>
+                    </div>
+                    <div className="item" >
+                        <FiBook size={22} style={{color: '#fff'}} />
+                        <p>library</p>
+                    </div>
+                </div>
+                
                 <div className="page" >
-                    {/* a */}
+                    <div classname="videoItem" >
+                        <div className="video">
+                        </div>
+                        <div className="description" >
+                            <div className="avatar" >
+                                <FiUser size={22} color="#fff" />
+                            </div>
+                            <div className="text" >
+                                <h1>Test Video 1</h1>
+                                <h2>User 1</h2>
+                                <h3>37 mil views • 3 days ago</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
+
+export default Home

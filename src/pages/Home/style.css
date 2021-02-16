@@ -2,12 +2,17 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 .wrapper {
     width: 100vw;
     height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
 }
+
+/* ------------------------------- Header -------------------------------- */
 
 .header {
     background-color: #202020;
@@ -80,6 +85,8 @@ input.searchbar::placeholder {
     margin-right: 20px;
 }
 
+/* -------------------------------- Content ------------------------------------------- */
+
 .content {
     background-color: #181818;
     width: 100%;
@@ -90,14 +97,97 @@ input.searchbar::placeholder {
     /* flex-direction: row; */
 }
 
+/* -------------------------------- SideBar ------------------------------------ */
+
 .sidebar {
     background-color: #202020;
     height: 100%;
     width: 70px;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
 }
 
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+.item p {
+    color: #fff;
+    font-size: 10px;
+}
+
+/* ---------------------------------- Page Content ------------------------------ */
+
 .page {
-    background-color: #181818;
-    width: 50px;
-    height: 50px;
+    /* background-color: #181818; */
+    width: 100%;
+    height: 100%;
+    padding-left: 70px;
+    padding-top: 25px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.video {
+    background-color: #f00;
+    width: 300px;
+    height: 180px;
+    margin: 10px;
+}
+
+.videoItem {
+    
+}
+
+.description {
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.avatar {
+    border-radius: 100%;
+    background-color: #9c9c9c;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    color: #9a9a9a;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.text h1 {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: -5px;
+    margin-bottom: -10px;
+}
+
+.text h2 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.text h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -15px;
 }
