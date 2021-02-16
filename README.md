@@ -2,6 +2,10 @@
 
 This project is an UI-Clone of youtube (Dark Theme).
 
+## Home Page
+
+<img src="./src/utild/Print.png">
+
 ## Available Scripts
 
 In the project directory, you can run:
