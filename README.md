@@ -1,6 +1,6 @@
-# Youtube UI-CLone
+# Youtube UI-Clone (Dark Theme)
 
-This project is an UI-Clone of youtube.
+This project is an UI-Clone of youtube (Dark Theme).
 
 ## Available Scripts
 
@@ -10,6 +10,3 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
