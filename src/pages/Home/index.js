@@ -3,6 +3,9 @@ import { FiMenu, FiSearch, FiBell, FiVideo, FiGrid, FiMic, FiUser, FiHome, FiRad
 
 
 function Home() {
+
+    const element = [1, 2, 3, 4, 5, 6, 7, 8]
+
     return (
         <div className="wrapper">
             <div className="header" >
@@ -48,20 +51,26 @@ function Home() {
                 </div>
                 
                 <div className="page" >
-                    <div classname="videoItem" >
-                        <div className="video">
-                        </div>
-                        <div className="description" >
-                            <div className="avatar" >
-                                <FiUser size={22} color="#fff" />
+                    {element.map((item, index) => {
+                        return (
+                            <div classname="videoItem" >
+                                <div className="video" />
+
+                                <div className="description" >
+                                    <div className="avatar" >
+                                        <FiUser size={22} color="#fff" />
+                                    </div>
+                                    <div className="text" >
+                                        <h1>Test Video {index}</h1>
+                                        <h2>User {index}</h2>
+                                        <h3>37 mil views • 3 days ago</h3>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="text" >
-                                <h1>Test Video 1</h1>
-                                <h2>User 1</h2>
-                                <h3>37 mil views • 3 days ago</h3>
-                            </div>
-                        </div>
-                    </div>
+                        )
+                    })
+
+                    }
                 </div>
             </div>
         </div>
