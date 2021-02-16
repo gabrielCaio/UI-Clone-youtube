@@ -4,7 +4,7 @@ This project is an UI-Clone of youtube (Dark Theme).
 
 ## Home Page
 
-![](/src/utild/Print.png)
+![](/src/utils/Print.png)
 
 ## Available Scripts
 
