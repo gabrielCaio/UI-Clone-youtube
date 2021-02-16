@@ -28,10 +28,14 @@ body {
     align-items: center;
 }
 
-.header h1 {
+.header a {
     color: #fff;
     font-size: 15px;
     margin-left: 20px;
+}
+
+.header a:hover {
+    cursor: pointer;
 }
 
 #start {
@@ -76,6 +80,10 @@ input.searchbar::placeholder {
     justify-content: center;
 }
 
+#searchButton:hover {
+    cursor: pointer;
+}
+
 .end {
     width: 200px;
     display: flex;
@@ -83,6 +91,10 @@ input.searchbar::placeholder {
     align-items: center;
     justify-content: space-evenly;
     margin-right: 20px;
+}
+
+.endButton:hover {
+    cursor: pointer;
 }
 
 /* -------------------------------- Content ------------------------------------------- */
@@ -118,6 +130,12 @@ input.searchbar::placeholder {
     padding: 10px;
 }
 
+.item:hover {
+    cursor: pointer;
+    background-color: #9c9c9c2a;
+    transition: 0.3s;
+}
+
 .item p {
     color: #fff;
     font-size: 10px;
@@ -144,8 +162,8 @@ input.searchbar::placeholder {
     margin: 10px;
 }
 
-.videoItem {
-    
+.video:hover {
+    cursor: pointer;
 }
 
 .description {
@@ -155,6 +173,10 @@ input.searchbar::placeholder {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.description:hover {
+    cursor: pointer;
 }
 
 .avatar {
